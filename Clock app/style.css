@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 100vw; 
+    height:100vh;
+    z-index: -1;
+    background: #000000e4;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#header{
+    height: 70px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    z-index: 999;
+    position: sticky;
+    margin-top: -10%;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    height: 100vh;
+    width: 200px;
+    background-color: #040404e4;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.613);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+}
+
+#navbar.active{
+    right: 0px;
+}
+#navbar li {
+    width: 160px;
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+    margin-left: 15%;
+    line-height: 60px;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #2b13fe;
+    
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: '';
+    width: 30%;
+    height: 2px;
+    background: rgb(1, 12, 6);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+#close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+}
+.fa-ellipsis-v{
+    color: white;
+    font-size: 24px;
+}
+
+.container{
+    width: 90vw;
+}
+.scontainer{
+    width: 90vw;
+    height: 80vh;
+    margin: -3rem auto;
+    text-align: center;
+    line-height: 8rem;
+}
+.con{
+    margin-top: 3rem;
+}
+.grid{
+    display: grid;
+}
+.clock__container{
+    height: 90vh;
+    grid-template-columns: 1fr max-content;
+    
+}
+.clock__circle{
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border: 0.2rem solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #2b13fe,
+                0 0 0.8rem #2b13fe,
+                0 0 2.8rem #2b13fe,
+                inset 0 0 1.3rem #2b13fe;
+    border-radius: 10rem;
+    justify-content: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+}
+.clock__content{
+    width: 100vw;
+    align-self: center;
+    margin-top: 7rem;
+    row-gap: 2rem;
+}
+.clock__content h2{
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: .3rem;
+    text-align: center;
+    text-shadow: 0 0 7px #fff,
+                0 0 10px #fff,
+               
+                0 0 20px #2b13fe,
+                0 0 10px #2b13fe;
+}
+h4{
+    color: rgba(255, 255, 255, 0.589);
+    text-align: center;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+}
+.clock__twelve,
+.clock__six,
+.clock__three,
+.clock__nine{
+    position: absolute;
+    height: 1px;
+    width: 1rem;
+    background-color: #fff;
+}
+.clock__twelve,
+.clock__six{
+    transform: translate(-50%) rotate(90deg);
+}
+.clock__twelve{
+    top: 1.25rem;
+    left: 50%;
+}
+.clock__three{
+    top:50%;
+    right: .75rem;
+}
+.clock__six{
+    bottom: 1.25rem;
+    left: 50%;
+}
+.clock__nine{
+    left: .75%;
+    top: 50%;
+}
+.clock__rounder{
+    width: .78rem;
+    height: .78rem;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #0b293b;
+    z-index: 90;
+}
+.clock__hour,
+.clock__minutes,
+.clock__seconds{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.clock__hour{
+    width: 105px;
+    height: 105px;
+}
+.clock__hour::before{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    
+    width: .25rem;
+    height: 3rem;
+    border-radius: .75rem;
+    z-index: 90;
+}
+.clock__minutes{
+    width: 136px;
+    height: 136px;
+}
+.clock__minutes::before{
+    content: '';
+    position: absolute;
+    background-color: #000;
+    
+    width: .25rem;
+    height: 4rem;
+    border-radius: .75rem;
+    z-index: 90;
+}
+.clock__seconds{
+    width: 130px;
+    height: 130px;
+}
+.clock__seconds::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(6, 6, 147);
+    width: .125rem;
+    height: 5rem;
+    border-radius: .75rem;
+}
+
+.clock__text{
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    padding-left: 2%;
+}
+.clock__text p{
+    font-size: 70px;
+    color: #fff;
+}
+.clock__text-hour,
+.clock__text-minutes{
+    font-size: 70px;
+    color: #fff;
+    font-weight: 400;
+}
+.clock__text-ampm{
+
+    font-size: 20px;
+    color: rgb(170, 168, 168);
+    font-weight: 500;
+}
+.clock__date{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+.flex{
+    display: flex;
+    padding: 0 3.5rem;
+    gap: 5rem;
+}
+.flex input{
+    width: 60px;
+    color: #fff;
+    margin: 0 -2rem;
+    height: 65px;
+    margin-top: 2.1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 50px;
+}
+
+@media (max-width:1023px){
+    .clock__circle{
+        width: 200px;
+        height: 200px;
+    }
+    .clock__text-hour,
+    .clock__text-minutes{
+        font-size: 50px;
+    }
+    .clock__text{
+        gap: 1%;
+        margin-top: -1%;       
+        padding-left: 3%;
+    }
+    .clock__text p{
+        font-size: 50px;
+    }
+    .clock__date{
+        padding-top: 1%;
+    }
+    
+}
+
+
+h2{
+    color: #fff;
+    text-shadow: 0 0 7px #fff,
+                0 0 10px #fff,
+                
+                
+                0 0 20px #2b13fe,
+                0 0 11px #2b13fe;
+    text-align: center;
+    font-size: 40px;
+}
+
+.ciircle{
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 100;
+    width: 250px;
+    height: 250px;
+    border: 0.2rem solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #2b13fe,
+                0 0 0.8rem #2b13fe,
+                0 0 2.8rem #2b13fe,
+                inset 0 0 1.3rem #2b13fe;
+    border-radius: 10rem;
+    padding-top: 5%;
+}
+.fa-arrow-left{
+    color: #fff;
+    font-size: 20px;
+    margin: 2rem 7rem;
+}
+button{
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+               
+                0 0 .8rem #2b13fe,
+                inset 0 0 .5rem #2b13fe;
+    outline: none;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+button:hover{
+    background: #000;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.btn{
+    padding-top: 7%;
+    gap: 2%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width:600px){
+    .clock__content{
+        margin-top: -8%; 
+        row-gap: 3rem;      
+    }
+    #header{
+        padding: 20px 10px;
+    }
+    .ciircle{
+        height: 200px;
+        width: 200px;
+    }
+    .ciircle span{
+        font-size: 55px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    body{
+        height: 90vh;
+    }
+    .btn{
+        padding-top: 3rem;
+    }
+    
+    a h4{
+        padding-top: 2rem;
+        height: 20px;
+       
+    }
+    .scontainer{
+        height: 90vh;
+    }
+    .fa-arrow-left{
+        margin: 2rem 2rem;
+        width: 10px;
+    }
+    .flex{
+        gap: 4rem;
+    }
+    .flex input{
+        font-size: 35px;
+    }
+    .con{
+        margin-top: 3rem;
+        height: 70vh;
+    }
+}
+
+
+

@@ -1,0 +1,28 @@
+{
+    "name": "EmCalculator",
+    "short_name": "EmCalculator",
+    "icons": [
+      {
+        "src": "./img/calc2.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "./img/calc3.png",
+        "sizes": "384x384",
+        "type": "image/png"
+      },
+      {
+        "src": "./img/calc.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#071115",
+    "background_color": "#071115",
+    "start_url": "/Calculator-App/",
+    "display": "standalone",
+    "orientation": "portrait"
+  }
+    

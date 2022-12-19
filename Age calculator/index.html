@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculate Age</h2><br>
+        <p>To calculate your age, enter your <br> birth date or select it by clicking
+            the calender icon!
+        </p>
+        <div class="input-wrapper"> 
+            <input type="date" id="date-input">
+        </div>
+        <div class="output-wrapper">
+            <div>
+                <span id="years">
+                    -
+                </span>
+                <p>
+                    Years
+                </p>
+            </div>
+            <div>
+                <span id="months">
+                    -
+                </span>
+                <p>
+                    Months
+                </p>
+            </div>
+            <div>
+                <span id="days">
+                    -
+                </span>
+                <p>
+                    Days
+                </p>
+            </div>
+        </div>
+    </div>
+    <button onclick="ageCalculate()">Calculate Age</button>
+    <footer>
+        <span>&#169; designed by dev_emmy</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #262933;
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator{
+    background-color: transparent;
+    width: 100%;
+    max-width: 375px;
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.display{
+    min-height: 200px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    text-align: right;
+    flex: 1 1 0%;
+}
+
+.display .input{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.display .output{
+    font-size: 2rem;
+    overflow-wrap: anywhere;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+}
+
+.display .operator{
+    color: rgb(199, 80, 24);
+}
+
+.display .brackets,
+.display .percent{
+    color: skyblue;
+}
+
+.keys{
+    background-color:#262933 ;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1rem;
+}
+
+.keys .key{
+    position: relative;
+    cursor: pointer;
+    border-radius: 1rem;
+    display: block;
+    padding-top: 100%;
+    background-color: #262933;
+    transition: 0.2s;
+    user-select: none;
+    box-shadow: 0px 0px 3px rgba(212, 210, 210, 0.938);
+}
+
+.keys .key span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.keys .key:hover span{
+    margin-top: -5px;
+    transition: 0.3s ease-in-out;
+}
+ 
+.keys .key.operator span{
+    color: rgb(199, 80, 24);
+}
+
+.keys .key.action span{
+    color: skyblue;
+}
+span{
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 340px){
+    .keys .key span{
+        font-size: 1.2rem;
+    }
+    .display .output {
+        font-size: 2.3rem;
+    }
+    .display .input {
+        font-size: 1.2rem;
+    }
+    .app{
+        height: 80vh;
+    }
+}
+    
+    

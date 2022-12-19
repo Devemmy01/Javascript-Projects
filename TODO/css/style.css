@@ -1,0 +1,238 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #0a4161;
+    font-family: 'Titillium Web', sans-serif;
+}
+h2{
+    color: white;
+}
+.container{
+    padding:10px;
+    margin:0 auto;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.header{
+    width: 380px;
+    height:200px;
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.header img{
+    height: 100px;
+    width: 100px;
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 30px, 0);
+    }
+}
+
+.clear{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+.clear i{
+    font-size: 30px;
+    color: #FFF;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+#date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+.cont{
+    justify-content: center;
+    display: grid;
+}
+.content{
+    width:380px;
+    height: 100vh;
+    max-height:350px;
+    background-color: transparent;
+    overflow: auto;
+}
+.content::-webkit-scrollbar { 
+    display:none; 
+}
+.content ul{
+    padding:0;
+    margin:0;
+}
+.item{
+    width:380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:green;
+}
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:10px;
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.item i.de{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+.add-to-do{
+    position: relative;
+    width: 360px;
+    height:40px;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    
+}
+.add-to-do i{
+    position: absolute;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.822);
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    padding-left:10px;
+    
+}
+.add-to-do input{ 
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+@media(max-width:360px){
+    .cont{
+        justify-content: center;
+        display: grid;
+        
+    }
+    .content{
+        width:100vw;
+        margin-left: rem;
+        height: 49.2vh;
+    }
+    .item{
+        width: 100vw;
+    }
+    .content ul {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+    .container{
+        padding:10px;
+        margin:0 auto;
+        justify-content: center;
+        display: flex;
+    }
+    .add-to-do{
+        width: 93vw;
+    }
+    .add-to-do input{
+        width: 70vw;
+    }
+    .item p.text{
+        font-size: 20px;
+    }
+    #date{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .clear{
+        top: 9px;
+        right: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

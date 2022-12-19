@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    background-color: rgba(6, 46, 92, 0.89)
+}
+
+.app-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+header input{
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #000;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+header input:focus{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.location .city{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 500px;
+    margin-bottom: 5px;
+}
+.location .date{
+    color: #fff;
+    font-size: 16px;
+}
+.current .temperature{
+    color: #fff;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+}
+.current .temperature span{
+    font-weight: 500;
+}
+.current .weather{
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+.current .hi-low{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+p{
+    text-align: center;
+    margin-bottom: 10px;
+    color: gray;
+}
