@@ -1,0 +1,21 @@
+{
+    "name": "Theme_switcher.io",
+    "description": "Switch from light mode to dark mode and vice versa",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "index.js"
+        ],
+        "persistent": true
+    },
+    "browser_action":{
+        "default_title": "Theme_switch.io",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ]
+}
