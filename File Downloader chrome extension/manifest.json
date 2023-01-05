@@ -1,0 +1,11 @@
+{
+    "name": "File Downloader",
+    "version": "1.0.0",
+    "description": "This is an extension to download any file link",
+    "manifest_version": 3,
+    "author": "Dev_emmy",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "File Downloader"
+    }
+}

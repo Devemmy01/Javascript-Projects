@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body, html{
+    height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://cdn.dribbble.com/users/516449/screenshots/2917399/media/fb0cac6cab5b785793ffe08e68e16b42.gif");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    width: 430px;
+    /* background: #fff; */
+    
+}
+.wrapper h1{
+    font-size: 25px;
+    font-weight: 500px;
+    padding: 20px 25px;
+    border-bottom: 1px solid yellow;
+    text-align: center;
+}
+.wrapper .content{
+    margin: 25px 25px 35px;
+}
+.content .typing-input{
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+}
+.content .inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.inputs input{
+    height: 57px;
+    width: 56px; 
+    margin: 4px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid #b5b5b5;
+    text-transform: uppercase;
+    color: rgba(219, 198, 6, 0.986);
+}
+.inputs input:first-child{
+    margin-left: 0px ;
+}
+.content .details{
+    margin: 20px 0 25px;
+}
+.details p{
+    font-size: 19px;
+    margin-bottom: 10px;
+    /* border-bottom: 1px solid yellow; */
+}
+.content .reset-btn{
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 15px 0;
+    font-size: 17px;
+    color: #fff;
+    background: rgba(241, 241, 3, 0.719);
+}
+
+
+#Smodal{
+    position: fixed;
+    z-index: 100;
+    display:  none;
+    justify-content: center;
+    align-items: center;
+}
+.close-modal{
+    color: black;
+}
+.modal{
+    background: #e6ecf0;
+    padding: 10px 0px 20px 0;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+.top{
+    display: flex;
+    justify-content: flex-end;
+}
+.top .close-modal{
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 20px;
+}
+.cont h2{
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: black;
+}
+#Cmodal{
+    position: fixed;
+    z-index: 100;
+    display:  none;
+    justify-content: center;
+    align-items: center;
+}
+.wrong-letter span{
+    color: red;
+}
+@media (max-width: 350px){
+    .inputs input{
+        height: 47px;
+        width: 46px; 
+        margin: 4px;
+        text-align: center;
+        font-size: 19px;
+    }
+    .details p{
+        font-size: 15px;
+    }
+    .modal{
+        width: 250px;
+    }
+    .cont h2{
+       font-size: 20px;
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Password Generator",
+    "version": "1.0.0",
+    "description": "This is an extension to generate a strong password of different characters",
+    "manifest_version": 3,
+    "author": "Dev_emmy",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Password Generator"
+    }
+}
