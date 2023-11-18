@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>speed typing game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card2">
+        <h5>Instructions</h5>
+        <p>Type each word in the given amount of seconds to gain points.
+            Do you want to play again? type the current word. your point(s) will reset
+        </p>
+    </div>
+    <div class="row">
+
+        <header><h1>TypingDrill</h1></header>
+        <div class="content">
+            <p class="lead">Type the Given Word Within 
+                <span id="seconds">15</span> Seconds
+            </p>
+            <div class="card">
+                <h2 id="current-word"> </h2>
+            </div>
+            <input type="text" spellcheck="true" placeholder="Start typing here...." id="word-input" autofocus>
+            <h4 id="message"></h4>
+
+
+            <div class="time">
+                <h3>Time left -:
+                    <span id="time">0</span>
+                </h3>
+                <h3>Points -:
+                    <span id="score">0</span>
+                </h3>
+            </div>
+
+        </div>
+    </div>
+    <p class="create">Created by @devemmy</p>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
