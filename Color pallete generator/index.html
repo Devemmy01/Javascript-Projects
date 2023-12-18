@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color pallete</title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <main>
-        <h1>
-            <h1>Generate Colour Pallete</h1>
-            <p>
-                Press [<button class="generator-button">Space Bar</button>]
-                to generate new color palletes
-            </p>
-            <h4>Generator</h4>
 
-            <div class="colours">
-                <div class="colour">
-                    <button class="lock-toggle">
-                        <img src="svg/open.png" alt="">
-                    </button>
-                    <input type="text" class="colour-input" value="#000000">
-                    <button class="copy-hex">Copy</button>
-                </div>
-                <div class="colour">
-                    <button class="lock-toggle">
-                        <img src="svg/open.png" alt="">
-                    </button>
-                    <input type="text" class="colour-input" value="#000000">
-                    <button class="copy-hex">Copy</button>
-                </div>
-                <div class="colour">
-                    <button class="lock-toggle">
-                        <img src="svg/open.png" alt="">
-                    </button>
-                    <input type="text" class="colour-input" value="#000000">
-                    <button class="copy-hex">Copy</button>
-                </div>
-                <div class="colour">
-                    <button class="lock-toggle">
-                        <img src="svg/open.png" alt="">
-                    </button>
-                    <input type="text" class="colour-input" value="#000000">
-                    <button class="copy-hex">Copy</button>
-                </div>
+<body>
+
+    <main>
+        <nav>
+            <div class="log">
+                <h1 class="logo">Palletize</h1>
+                <img src="svg/logo.png" class="logimg" alt="">
             </div>
-        </h1>
+            <div class="github">
+                <a href="https://github.com/Devemmy01/Javascript-Projects/tree/main/Color%20pallete%20generator"><img
+                        src="svg/github.png" alt=""></a>
+            </div>
+        </nav>
+        <h1>Generate Colour Pallete</h1>
+        <p>
+            Press [<button class="generator-button">Space Bar</button>] or refresh the page
+            to generate new color palletes
+        </p>
+
+        <div class="colours">
+            <div class="colour" data-aos="zoom-in-up" data-aos-duration="2000">
+                <button class="lock-toggle">
+                    <img src="svg/open.png" alt="">
+                </button>
+                <input type="text" class="colour-input" value="#000000">
+                <button class="copy-hex">Copy</button>
+            </div>
+            <div class="colour" data-aos="zoom-in-up" data-aos-duration="2000">
+                <button class="lock-toggle">
+                    <img src="svg/open.png" alt="">
+                </button>
+                <input type="text" class="colour-input" value="#000000">
+                <button class="copy-hex">Copy</button>
+            </div>
+            <div class="colour" data-aos="zoom-in-up" data-aos-duration="2000">
+                <button class="lock-toggle">
+                    <img src="svg/open.png" alt="">
+                </button>
+                <input type="text" class="colour-input" value="#000000">
+                <button class="copy-hex">Copy</button>
+            </div>
+            <div class="colour" data-aos="zoom-in-up" data-aos-duration="2000">
+                <button class="lock-toggle">
+                    <img src="svg/open.png" alt="">
+                </button>
+                <input type="text" class="colour-input" value="#000000">
+                <button class="copy-hex">Copy</button>
+            </div>
+        </div>
+
     </main>
 
 
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

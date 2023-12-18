@@ -33,18 +33,28 @@ class Colour {
         }
         this.setHex(hex);
     }
-    copyToClipboard (){
-        const input = this.element.querySelector('colour-input');
+    copyToClipboard() {
+        const input = this.element.querySelector('.colour-input');
         input.select();
         document.execCommand('copy');
         input.blur();
-
+    
+        const copyButton = this.element.querySelector('.copy-hex');
+        
+        // Change the text to "Copied!" after copying
+        copyButton.textContent = 'Copied!';
+    
+        // Revert the text to "Copy" after 2000 milliseconds (2 seconds)
+        setTimeout(() => {
+            copyButton.textContent = 'Copy';
+        }, 2000);
+    
         this.element.classList.add('copied');
         setTimeout(() => {
             this.element.classList.remove('copied');
         }, 1000);
-
     }
+    
 }
 
 const colour_elements = document.querySelectorAll('.colours .colour');
