@@ -18,15 +18,7 @@ To run this game, you will need:
 
 #### How to Play
 
-To play the game, simply enter a deposit amount and press enter. The game will then simulate the spinning of three reels. If you match three of the same symbol, you will win a prize. The prizes are as follows:
-
-* **Cherry:** 2x your deposit
-* **Lemon:** 3x your deposit
-* **Orange:** 4x your deposit
-* **Plum:** 5x your deposit
-* **Bell:** 10x your deposit
-* **Bar:** 15x your deposit
-* **7:** 20x your deposit
+To play the game, simply enter a deposit amount and press enter. The game will then simulate the spinning of three reels. If you match three of the same symbol, you will win a prize. 
 
 #### Code Overview
 
