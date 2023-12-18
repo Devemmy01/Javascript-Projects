@@ -8,7 +8,7 @@ To use the colour generator, simply open the `index.html` file in a web browser.
 
 To generate a new colour, simply refresh the page. You can also press the spacebar to generate new colours.
 
-To lock a colour, simply click on the lock toggle. The colour will be locked and will not change when you generate new colours.
+To lock a colour, simply click on the lock toggle. The colour will be locked and will not change when you generate new colours only be pressing the spacebar.
 
 To copy the hex code of a colour, simply click on the copy button. The hex code will be copied to your clipboard.
 
